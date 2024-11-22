@@ -4,8 +4,13 @@ plugins {
     id 'maven-publish'
 }
 
+// apply dependency file for a simple version management strategy.
+apply from: "$projectDir/gradle/dependencies.gradle"
+
 group = 'dev.bulmer.dovahkiin-forged'
-version = System.getenv("VERSION") ?: '1.0.1-SNAPSHOT'
+// get the system env var for version during release tagging in GitHub
+// or default to a static string.
+version = System.getenv("VERSION") ?: '1.0.3-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -17,10 +22,10 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     // Lombok
-    compileOnly 'org.projectlombok:lombok:1.18.36'
-    annotationProcessor 'org.projectlombok:lombok:1.18.36'
-    testCompileOnly 'org.projectlombok:lombok:1.18.36'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.36'
+    compileOnly libs.lombok
+    annotationProcessor libs.lombok
+    testCompileOnly libs.lombok
+    testAnnotationProcessor libs.lombok
 }
 
 java {
