@@ -1,4 +1,7 @@
 # [Commons] Dovahkiin: Forged
+![Release](https://img.shields.io/github/v/release/DylanBulmer/dovahkiin-forged-commons?display_name=release&style=flat-square)
+![Build Status](https://img.shields.io/github/actions/workflow/status/DylanBulmer/dovahkiin-forged-commons/gradle.yaml?style=flat-square)
+
 **Java:** `21` **MC:** `1.21.3`
 
 ---
