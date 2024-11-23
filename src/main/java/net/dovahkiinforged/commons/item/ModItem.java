@@ -1,4 +1,4 @@
-package dev.bulmer.dovahkiinforged.commons.item;
+package net.dovahkiinforged.commons.item;
 
 import lombok.Builder;
 import lombok.Value;
@@ -7,11 +7,11 @@ import lombok.Value;
 @Builder
 public class ModItem {
     String name;
-    Settings settings;
+    Traits traits;
 
     @Value
     @Builder
-    public static class Settings {
+    public static class Traits {
         @Builder.Default
         Integer maxStackSize = 64;
         Integer maxDamage;
@@ -19,5 +19,15 @@ public class ModItem {
         Float efficiency;
         Float cooldown;
         boolean fireproof;
+        FoodTraits foodTraits;
     }
+
+    @Value
+    @Builder
+    public static class FoodTraits {
+        Integer nutrition;
+        Float saturation;
+        boolean alwaysEdible;
+    }
+
 }

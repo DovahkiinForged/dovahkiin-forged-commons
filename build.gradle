@@ -7,7 +7,7 @@ plugins {
 // apply dependency file for a simple version management strategy.
 apply from: "$projectDir/gradle/dependencies.gradle"
 
-group = 'dev.bulmer.dovahkiin-forged'
+group = 'net.dovahkiinforged'
 // get the system env var for version during release tagging in GitHub
 // or default to a static string.
 version = System.getenv("VERSION") ?: '1.0.3-SNAPSHOT'

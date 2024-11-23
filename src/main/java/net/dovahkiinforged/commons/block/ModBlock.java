@@ -1,4 +1,4 @@
-package dev.bulmer.dovahkiinforged.commons.block;
+package net.dovahkiinforged.commons.block;
 
 import lombok.Builder;
 import lombok.Value;
@@ -8,11 +8,11 @@ import lombok.Value;
 public class ModBlock {
     String name;
     String tooltip;
-    Settings settings;
+    Traits traits;
 
     @Value
     @Builder
-    public static class Settings {
+    public static class Traits {
         float hardness;
         float resistance;
         float lightLevel;
