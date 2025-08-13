@@ -1,8 +1,7 @@
 pluginManagement {
     repositories {
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
     }
 }
-
-rootProject.name = 'dovahkiin-forged-commons'

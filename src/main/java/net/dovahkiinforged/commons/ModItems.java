@@ -12,7 +12,7 @@ public final class ModItems {
             .traits(Traits.builder()
                     .maxStackSize(1)
                     .cooldown(0.5f)
-                    .maxDamage(4)
+                    .damage(ModItem.Damage.builder().normal(4).build())
                     .build())
             .build();
     public static final ModItem ELVEN_SWORD = ModItem.builder()
@@ -20,7 +20,7 @@ public final class ModItems {
             .traits(Traits.builder()
                     .maxStackSize(1)
                     .cooldown(1f)
-                    .maxDamage(6)
+                    .damage(ModItem.Damage.builder().normal(6).build())
                     .build())
             .build();
     public static final ModItem GLASS_DAGGER = ModItem.builder()
@@ -28,7 +28,7 @@ public final class ModItems {
             .traits(Traits.builder()
                     .maxStackSize(1)
                     .cooldown(0.5f)
-                    .maxDamage(4)
+                    .damage(ModItem.Damage.builder().normal(4).build())
                     .build())
             .build();
     public static final ModItem GLASS_SWORD = ModItem.builder()
@@ -36,46 +36,70 @@ public final class ModItems {
             .traits(Traits.builder()
                     .maxStackSize(1)
                     .cooldown(1f)
-                    .maxDamage(6)
+                    .damage(ModItem.Damage.builder().normal(6).build())
                     .build())
             .build();
 
     /* MATERIALS */
 
+    public static final ModItem AMETHYST = ModItem.builder()
+            .name("amethyst")
+            .traits(Traits.builder()
+                    .damage(ModItem.Damage.builder().normal(1).build())
+                    .build())
+            .build();
+    public static final ModItem GARNET = ModItem.builder()
+            .name("garnet")
+            .traits(Traits.builder()
+                    .damage(ModItem.Damage.builder().normal(1).build())
+                    .build())
+            .build();
+    public static final ModItem RUBY = ModItem.builder()
+            .name("ruby")
+            .traits(Traits.builder()
+                    .damage(ModItem.Damage.builder().normal(1).build())
+                    .build())
+            .build();
+    public static final ModItem SAPPHIRE = ModItem.builder()
+            .name("sapphire")
+            .traits(Traits.builder()
+                    .damage(ModItem.Damage.builder().normal(1).build())
+                    .build())
+            .build();
     public static final ModItem MALACHITE_INGOT = ModItem.builder()
             .name("malachite_ingot")
             .traits(Traits.builder()
-                    .maxDamage(1)
+                    .damage(ModItem.Damage.builder().normal(1).build())
                     .build())
             .build();
     public static final ModItem MALACHITE_NUGGET = ModItem.builder()
             .name("malachite_nugget")
             .traits(Traits.builder()
-                    .maxDamage(1)
+                    .damage(ModItem.Damage.builder().normal(1).build())
                     .build())
             .build();
     public static final ModItem MOONSTONE_INGOT = ModItem.builder()
             .name("moonstone_ingot")
             .traits(Traits.builder()
-                    .maxDamage(1)
+                    .damage(ModItem.Damage.builder().normal(1).build())
                     .build())
             .build();
     public static final ModItem MOONSTONE_NUGGET = ModItem.builder()
             .name("moonstone_nugget")
             .traits(Traits.builder()
-                    .maxDamage(1)
+                    .damage(ModItem.Damage.builder().normal(1).build())
                     .build())
             .build();
     public static final ModItem STEEL_INGOT = ModItem.builder()
             .name("steel_ingot")
             .traits(Traits.builder()
-                    .maxDamage(1)
+                    .damage(ModItem.Damage.builder().normal(1).build())
                     .build())
             .build();
     public static final ModItem STEEL_NUGGET = ModItem.builder()
             .name("steel_nugget")
             .traits(Traits.builder()
-                    .maxDamage(1)
+                    .damage(ModItem.Damage.builder().normal(1).build())
                     .build())
             .build();
 }

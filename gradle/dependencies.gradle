@@ -1,9 +1,9 @@
 ext {
     versions = [
-            lombok: "1.18.36"
+            assets: "1.0.0-SNAPSHOT"
     ]
 
     libs = [
-            lombok: "org.projectlombok:lombok:${versions.lombok}"
+            assets: "net.dovahkiinforged:dovahkiin-forged-assets:${versions.assets}"
     ]
 }

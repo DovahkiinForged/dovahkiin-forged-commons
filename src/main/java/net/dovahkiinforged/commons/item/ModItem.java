@@ -6,15 +6,30 @@ import lombok.Value;
 @Value
 @Builder
 public class ModItem {
+    /**
+     * The item name, used as the registry key/name
+     */
     String name;
+    /**
+     * The item traits
+     */
     Traits traits;
 
     @Value
     @Builder
     public static class Traits {
+        /**
+         * The maximum stack size of the item.
+         */
         @Builder.Default
         Integer maxStackSize = 64;
-        Integer maxDamage;
+        /**
+         * The damage the item can deal.
+         */
+        Damage damage;
+        /**
+         * The durability of the item.
+         */
         Integer durability;
         Float efficiency;
         Float cooldown;
@@ -28,6 +43,13 @@ public class ModItem {
         Integer nutrition;
         Float saturation;
         boolean alwaysEdible;
+    }
+
+    @Value
+    @Builder
+    public static class Damage {
+        Integer normal;
+        Integer critical;
     }
 
 }
