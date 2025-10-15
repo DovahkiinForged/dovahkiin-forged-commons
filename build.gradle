@@ -13,8 +13,6 @@ apply from: "$projectDir/gradle/dependencies.gradle"
 version = System.getenv("VERSION") ?: '1.0.5-SNAPSHOT'
 
 repositories {
-    mavenCentral()
-    mavenLocal()
     maven {
         url = uri("https://maven.pkg.github.com/DovahkiinForged/dovahkiin-forged-assets")
         credentials {
@@ -22,6 +20,7 @@ repositories {
             password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
         }
     }
+    mavenCentral()
 }
 
 dependencies {
