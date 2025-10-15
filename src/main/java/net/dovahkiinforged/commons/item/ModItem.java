@@ -14,6 +14,10 @@ public class ModItem {
      * The item traits
      */
     Traits traits;
+    /**
+     * The item type, used to categorize the item (e.g., TOOL, WEAPON, ARMOR)
+     */
+    String type;
 
     @Value
     @Builder
