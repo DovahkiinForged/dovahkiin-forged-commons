@@ -1,6 +1,6 @@
 ext {
     versions = [
-            assets: "1.0.1-SNAPSHOT"
+            assets: "1.0.2-SNAPSHOT"
     ]
 
     libs = [
